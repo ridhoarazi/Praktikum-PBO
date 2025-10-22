@@ -1,13 +1,11 @@
 package models;
 
 public class Book {
-    // Atribut
     public String judul;
     public String penulis;
     public String tahunTerbit;
     public boolean isBooked;
 
-    // Konstruktor
     public Book(String judul, String penulis, String tahunTerbit, boolean isBooked) {
         this.judul = judul;
         this.penulis = penulis;
@@ -15,7 +13,6 @@ public class Book {
         this.isBooked = isBooked;
     }
 
-    // Method untuk menampilkan data buku
     public void tampilkanDataBuku() {
         System.out.println("Judul       : " + judul);
         System.out.println("Penulis     : " + penulis);
@@ -23,3 +20,4 @@ public class Book {
         System.out.println("Status      : " + (isBooked ? "Sedang dipinjam" : "Tersedia"));
     }
 }
+
